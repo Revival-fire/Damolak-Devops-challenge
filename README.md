@@ -9,7 +9,7 @@
 ```bash
 # Clone the repo
 git clone https://github.com/Revival-fire/Damolak-Devops-challenge.git
-cd devops-challenge
+cd Damolak-Devops-challenge
 
 # Edit variables in the script
 vim scripts/bootstrap.sh   # set GITHUB_ORG and GITHUB_REPO
