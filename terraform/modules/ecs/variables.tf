@@ -1,0 +1,13 @@
+variable "project_name"       { type = string }
+variable "environment"        { type = string }
+variable "aws_region"         { type = string }
+variable "vpc_id"             { type = string }
+variable "public_subnet_ids"  { type = list(string) }
+variable "private_subnet_ids" { type = list(string) }
+variable "ecr_repository_url" { type = string }
+variable "image_tag"          { type = string }
+variable "app_port"           { type = number }
+variable "desired_count"      { type = number }
+variable "cpu"                { type = number }
+variable "memory"             { type = number }
+variable "log_group_name"     { type = string }
