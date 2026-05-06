@@ -190,19 +190,7 @@ ECS tasks run in private subnets with no public IPs. Outbound traffic (ECR image
 
 ---
 
-## Limitations & Potential Improvements
 
-| Area | Current State | Improvement |
-|------|--------------|-------------|
-| TLS | HTTP only | Add ACM cert + HTTPS listener + redirect HTTP→HTTPS |
-| DNS | Raw ALB DNS name | Register domain in Route 53, create alias record |
-| Secrets | Env vars in task def | Use AWS Secrets Manager + `secretsOptions` in task def |
-| Multi-env | Single `prod` | Add `staging` workspace with separate tfvars |
-| Observability | CloudWatch | Add Prometheus/Grafana or AWS X-Ray tracing |
-| Database | Stateless app | Add RDS Postgres module in private subnets |
-| Cost | NAT per AZ | Single NAT saves ~$32/month for non-HA dev environments |
-| Security | OIDC role has broad policies | Scope IAM policies to specific resource ARNs |
-| Image signing | Not implemented | Add AWS Signer / Cosign for supply chain security |
 
 ---
 
@@ -239,6 +227,4 @@ aws s3 rb s3://<TF_STATE_BUCKET> --force
 aws dynamodb delete-table --table-name devops-challenge-tflock
 aws iam detach-role-policy ...  # and delete the role
 ```
-=======
-# Damolak-Devops-challenge
->>>>>>> 6d09143e218bcc246fc26cf5738e25e2d9c5ee42
+
