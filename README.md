@@ -8,7 +8,7 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-org/devops-challenge.git
+git clone https://github.com/Revival-fire/Damolak-Devops-challenge.git
 cd devops-challenge
 
 # Edit variables in the script
