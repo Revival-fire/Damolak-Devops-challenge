@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DevOps Challenge — Production-Ready Application Deployment
 
 
