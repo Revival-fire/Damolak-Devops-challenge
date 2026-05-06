@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DevOps Challenge — Production-Ready Application Deployment
 
 
@@ -239,3 +240,6 @@ aws s3 rb s3://<TF_STATE_BUCKET> --force
 aws dynamodb delete-table --table-name devops-challenge-tflock
 aws iam detach-role-policy ...  # and delete the role
 ```
+=======
+# Damolak-Devops-challenge
+>>>>>>> 6d09143e218bcc246fc26cf5738e25e2d9c5ee42
